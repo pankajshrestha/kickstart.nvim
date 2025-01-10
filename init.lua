@@ -216,6 +216,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
+------------- My configs ---------------------------------
+-- Load and setup keymaps
+require('keymaps').setup()
+---
+---------------- End of my config -------------------------
 -- [[ Configure and install plugins ]]
 --
 --  To check the current status of your plugins, run
@@ -917,14 +922,14 @@ require('lazy').setup({
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   },
   { -- https://github.com/nvim-neo-tree/neo-tree.nvim
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v3.x",
+    'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v3.x',
     dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons', -- not strictly required, but recommended
+      'MunifTanjim/nui.nvim',
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    }
+    },
   },
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
