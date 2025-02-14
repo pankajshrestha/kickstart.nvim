@@ -261,6 +261,18 @@ require('lazy').setup({
     },
   },
 
+  -----------------------------------
+  --Pankaj Changes Start -------------
+  -------------------------------
+  {
+    'numToStr/Comment.nvim',
+    config = true,
+    lazy = false,
+  },
+  -----------------------------------------
+  ---Pankaj Changes End ---------------------
+  --------------------------------------------
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
